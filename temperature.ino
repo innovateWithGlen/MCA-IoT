@@ -63,7 +63,7 @@ void sendSensorData() {
 void setup() {
   // Start Serial Monitor for debugging
   Serial.begin(115200);
-  delay(100000);
+  delay(1000);
 
   // Start up the DallasTemperature library
   sensors.begin();
@@ -72,7 +72,7 @@ void setup() {
   Blynk.begin(auth, ssid, pass);
 
   // Setup a timer to call sendSensorData() every 2 seconds (2000 milliseconds)
-  timer.setInterval(200000L, sendSensorData);
+  timer.setInterval(5000L, sendSensorData);
 }
 
 void loop() {
