@@ -13,9 +13,9 @@ This project is a comprehensive, solar-powered IoT system designed to automate a
 
 Hardware Requirements
 
-|_Component_______________|_Quantity_|_Purpose_____________________________|
-____________________________________________________________________________
-|_ESP32 Dev Kit___________|_1________|_Microcontroller with Wi-Fi__________|
+| Component               | Quantity | Purpose                             |
+----------------------------------------------------------------------------
+| ESP32 Dev Kit           | 1        | Microcontroller with Wi-Fi          |
 | DS18B20 Temp Sensor     | 1        | Water temperature measurement       |
 | Turbidity Sensor        | 1        | Water clarity monitoring            |
 | MQ-135 Gas Sensor       | 1        | Ammonia/Air Quality monitoring      |
