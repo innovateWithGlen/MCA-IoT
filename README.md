@@ -4,14 +4,14 @@ This project is a comprehensive, solar-powered IoT system designed to automate a
 
 
 
-## ✨ Features
+ Features
 - **Real-Time Monitoring:** Live tracking of water temperature, turbidity, and ambient ammonia levels.
 - **Automated Actuator Control:** Scheduled fish feeding via a servo and intelligent, time-based lighting controlled by a relay and synced with internet time.
 - **Remote Control & Visualization:** A custom dashboard on both web and mobile platforms using Blynk for viewing sensor data and manually controlling the lights and feeder.
 - **Alerts & Notifications:** Instant push notifications for critical events like low food, out-of-range sensor values, or low water levels.
 - **Off-Grid Power System:** A self-sufficient power system using a solar panel, an 18650 Li-ion battery, and a boost converter for continuous operation.
 
-## Hardware Requirements
+Hardware Requirements
 
 |_Component_______________|_Quantity_|_Purpose_____________________________|
 ____________________________________________________________________________
