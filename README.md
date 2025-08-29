@@ -19,6 +19,7 @@ This project is a comprehensive, solar-powered IoT system designed to automate a
 | DS18B20 Temp Sensor| 1 | Water temperature measurement |
 | Turbidity Sensor | 1 | Water clarity monitoring |
 | MQ-135 Gas Sensor | 1 | Ammonia/Air Quality monitoring |
+| **IR Proximity Sensor** | 1 | Low fish food detection |
 | SG90 Servo Motor | 1 | Automated feeding mechanism |
 | 5V Relay Module | 1 | Controls power to the LED strip |
 | 5V Waterproof LED Strip | 1m | Aquarium lighting |
@@ -58,6 +59,9 @@ This circuit provides a stable 5V to all components.
 | **MQ-135 Sensor** | VCC | Breadboard 5V Rail (+) |
 | | GND | Breadboard GND Rail (-) |
 | | Signal (AOUT)| ESP32 `GPIO 35` |
+| **IR Proximity Sensor**| VCC | Breadboard 3.3V Rail |
+| | GND | Breadboard GND Rail (-) |
+| | Signal (OUT) | ESP32 `GPIO 14` |
 | **SG90 Servo Motor** | Power (Red) | Breadboard 5V Rail (+) |
 | | Ground (Brown)| Breadboard GND Rail (-) |
 | | Signal (Orange)| ESP32 `GPIO 22` |
@@ -85,31 +89,12 @@ In the Blynk web console, navigate to your Template and create the following Dat
 | Charging Status| `Charging Status`| `V14`| String | - |
 | Terminal Log | `Terminal Log` | `V20`| String | - |
 
-### Phase 2: Web Dashboard Setup
-Navigate to the **Web Dashboard** tab and drag widgets onto the canvas, connecting them to the Datastreams you just created.
-
-| Widget Type | Title | Connect to Datastream |
-| :--- | :--- | :--- |
-| **Switch** | LED Lights | `Light Control (V0)` |
-| **LED** | Light Status | `Light Status (V1)` |
-| **Button** | Feed Fish | `Feeder Control (V2)` |
-| **Gauge** | Temperature | `Temperature (V10)` |
-| **Gauge** | Turbidity | `Turbidity (V11)` |
-| **Gauge** | Ammonia Level | `Ammonia Level (V12)` |
-| **Gauge** | Battery Level | `Battery Level (V13)` |
-| **Value Display**| Charging Status| `Charging Status (V14)` |
-| **Terminal** | System Log | `Terminal Log (V20)` |
-
-### Phase 3: Mobile Dashboard Setup
-1.  Open the Blynk app on your phone.
-2.  Select your project and tap the **wrench icon** to enter Developer Mode.
-3.  Tap the canvas to open the Widget Box.
-4.  Add widgets corresponding to the list above and connect them to the **same Datastreams**.
-5.  Arrange the layout, then tap the wrench icon again to save and exit.
+### Phase 2: Web & Mobile Dashboard Setup
+Using the Datastreams above, add the corresponding widgets (Switches, Gauges, LEDs, etc.) to your Web and Mobile dashboards.
 
 ## 💻 Code Setup & Upload
 1.  Open the main project `.ino` file in the Arduino IDE.
-2.  Install the required libraries from the Library Manager: `Blynk`, `OneWire`, `DallasTemperature`, `ESP32Servo`.
+2.  Install the required libraries: `Blynk`, `OneWire`, `DallasTemperature`, `ESP32Servo`.
 3.  Fill in your personal credentials at the top of the code:
     ```cpp
     #define BLYNK_TEMPLATE_ID "YOUR_TEMPLATE_ID"
@@ -121,5 +106,4 @@ Navigate to the **Web Dashboard** tab and drag widgets onto the canvas, connecti
     ```
 4.  In the Arduino IDE, go to **Tools > Board** and select your ESP32 model.
 5.  Select the correct COM Port under **Tools > Port**.
-6.  Click the **Upload** button.
-7.  Open the **Serial Monitor** at **115200 baud** to see status messages.
+6.  Click the **Upload** button and open the **Serial Monitor** at **115200 baud**.
