@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL3dythRJpg"
-#define BLYNK_TEMPLATE_NAME "DS18B20 TEMP SENSOR"
-#define BLYNK_AUTH_TOKEN "5MlmBVMzyNO9GhcYyCQFHKPtpiTFniRu"
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_TEMPLATE_NAME ""
+#define BLYNK_AUTH_TOKEN ""
 
 // Enables printing of debug information to the Serial Monitor
 #define BLYNK_PRINT Serial
