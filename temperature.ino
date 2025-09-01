@@ -11,10 +11,10 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-// --- UPDATE THESE VALUES ---
-char auth[] = "5MlmBVMzyNO9GhcYyCQFHKPtpiTFniRu"; // Your Blynk Auth Token
-char ssid[] = "GlenM";        // Your WiFi network name
-char pass[] = "vqme4719";    // Your WiFi password
+  // --- UPDATE THESE VALUES ---
+  char auth[] = ""; // Your Blynk Auth Token
+  char ssid[] = "";        // Your WiFi network name
+  char pass[] = "";    // Your WiFi password
 // --------------------------
 
 // Define the GPIO pin where the DS18B20 data wire is connected
