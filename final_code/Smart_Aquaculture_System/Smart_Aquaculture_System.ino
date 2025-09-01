@@ -1,6 +1,6 @@
-#define BLYNK_TEMPLATE_ID "TMPL35C3m_BQv"
-#define BLYNK_TEMPLATE_NAME "Smart Aquaculture System"
-#define BLYNK_AUTH_TOKEN "YAb2oVsH8KAj1927GTe0U4PzpwfdtGRD"
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_TEMPLATE_NAME ""
+#define BLYNK_AUTH_TOKEN ""
 #define BLYNK_PRINT Serial
 
 #include <WiFi.h>
@@ -11,9 +11,9 @@
 #include <time.h>
 
 // WiFi and Blynk Credentials
-char auth[] = "YAb2oVsH8KAj1927GTe0U4PzpwfdtGRD";
-char ssid[] = "GlenM";
-char pass[] = "vqme4719"; 
+char auth[] = "";
+char ssid[] = "";
+char pass[] = ""; 
 
 // Pin Definitions
 #define ONE_WIRE_BUS 4       // DS18B20 Temperature Sensor
